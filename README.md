@@ -78,49 +78,6 @@ The pipeline flows through these stages:
 8. Latency benchmarking
 9. Reports and cards
 
-## Repository Structure
-
-**autonomy_stack/simulation**
-Creates scenarios and contains the optional CARLA adapter.
-
-**autonomy_stack/data_engine**
-Stores episodes, mines failures, ranks hard cases, and prepares data summaries.
-
-**autonomy_stack/models**
-Contains two CNN policy architectures (CompactCNNPolicy and MediumCNNPolicy) and world model components. Supports flexible model-size and latency tradeoffs.
-
-**autonomy_stack/training**
-Contains behavior cloning, offline RL, and world model training utilities.
-
-**autonomy_stack/evaluation**
-Computes safety metrics and builds reports.
-
-**autonomy_stack/optimization**
-Benchmarks latency and model size.
-
-**autonomy_stack/deployment**
-Contains ONNX export and deployment helpers.
-
-**scripts**
-Runnable demos and report generation commands.
-
-**docs**
-Technical notes, runtime modes, and compute specifications.
-
-**tests**
-CARLA-free unit tests.
-
-## Runtime Modes
-
-**Synthetic mode**
-Runs locally without CARLA. Used for testing the complete pipeline.
-
-**CARLA mode**
-Optional. Requires a local CARLA setup. Used for collecting simulator-backed episodes.
-
-**Training mode**
-Used for model update steps and future longer training runs.
-
 ## Quick Start
 
 ```bash
@@ -165,10 +122,3 @@ On Windows:
 - Add stronger future occupancy or risk prediction
 - Add a small dashboard for browsing failures and reports
 
-## Attribution
-
-Learn2Drive is independently implemented by Pranjal T S. It is inspired by public research themes in learning-based autonomous driving, simulation, imitation learning, and data curation. Required legal and attribution notes are listed in THIRD_PARTY_NOTICES.md.
-
-## License
-
-MIT License. See LICENSE file for details.
