@@ -1,0 +1,12 @@
+name: "carla_collect_small"
+description: "Small data collection run (CARLA optional)"
+
+collection:
+  num_episodes: 10
+  rollout_length: 100
+  scenarios: ["simple_straight", "urban_driving"]
+  collection_mode: "carla"
+  fallback_to_synthetic: true
+
+storage:
+  episodes_path: "data/carla_episodes"

@@ -1,0 +1,18 @@
+name: "autonomy_stack_data_engine"
+description: "Data curation and failure mining pipeline"
+
+episode_store:
+  storage_dir: "data/episodes"
+  max_episodes: 10000
+
+failure_mining:
+  collision_threshold: 0.1
+  violation_threshold: 0.05
+  jerk_threshold: 2.0
+
+hard_case_selection:
+  enabled: true
+  difficulty_metric: "jerk_and_safety"
+
+data_augmentation:
+  enabled: false

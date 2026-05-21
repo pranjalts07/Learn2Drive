@@ -1,0 +1,11 @@
+name: "carla_train_bc_small"
+description: "BC training on CARLA data (optional)"
+
+training:
+  num_epochs: 5
+  batch_size: 16
+  learning_rate: 1e-3
+
+data_source: "carla_episodes"
+model: "behavior_cloning"
+device: "cpu"

@@ -1,0 +1,14 @@
+name: "carla_local_setup"
+description: "Local CARLA configuration (optional)"
+
+carla:
+  host: "localhost"
+  port: 2000
+  timeout: 10.0
+  synchronous_mode: true
+
+simulation:
+  physics_engine: "bullet"
+  fixed_delta_seconds: 0.05
+
+note: "CARLA is optional. Synthetic mode is default."

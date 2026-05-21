@@ -1,0 +1,17 @@
+name: "autonomy_stack_deployment_benchmark"
+description: "Deployment latency and model sizing"
+
+deployment:
+  export_format: "onnx"
+  device: "cpu"
+
+benchmarking:
+  inference_runs: 100
+  batch_sizes: [1, 2, 4]
+  report_metrics: ["p50_latency", "p95_latency", "mean_latency", "fps", "model_size"]
+
+expected_performance:
+  p50_latency_ms: 1.22
+  p95_latency_ms: 1.50
+  mean_fps: 798
+  model_size_mb: 0.73

@@ -1,0 +1,9 @@
+name: "carla_eval_small"
+description: "Policy evaluation on CARLA (optional)"
+
+evaluation:
+  num_episodes: 5
+  scenarios: ["simple_straight", "urban_driving"]
+  policy: "behavior_cloning_v1"
+  mode: "carla"
+  fallback_to_synthetic: true

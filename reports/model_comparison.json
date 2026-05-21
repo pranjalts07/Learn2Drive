@@ -1,0 +1,18 @@
+{
+  "Compact": {
+    "parameters": 604323,
+    "size_mb": 2.31,
+    "p50_latency_ms": 0.64,
+    "p95_latency_ms": 1.16,
+    "mean_latency_ms": 0.74,
+    "fps": 1353.3
+  },
+  "Medium": {
+    "parameters": 2840643,
+    "size_mb": 10.84,
+    "p50_latency_ms": 1.58,
+    "p95_latency_ms": 2.62,
+    "mean_latency_ms": 1.7,
+    "fps": 587.8
+  }
+}

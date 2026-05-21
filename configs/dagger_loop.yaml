@@ -1,0 +1,13 @@
+name: "autonomy_stack_dagger_loop"
+description: "DAgger interactive learning loop"
+
+dagger:
+  num_iterations: 5
+  rollout_length: 100
+  expert_relabel: true
+  student_policy: "behavior_cloning_v1"
+  expert_policy: "oracle"
+
+data:
+  collection_mode: "synthetic"
+  store_path: "data/dagger_episodes"

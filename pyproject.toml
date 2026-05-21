@@ -1,0 +1,49 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[project]
+name = "autonomy_stack"
+version = "0.1.0"
+description = "Production-grade autonomous driving ML engineering portfolio"
+authors = [{name = "Pranjalts", email = "pranjalts07@gmail.com"}]
+license = {text = "MIT"}
+requires-python = ">=3.9"
+
+dependencies = [
+    "numpy>=1.21",
+    "torch>=1.9",
+    "onnx>=1.10",
+    "pyyaml>=5.4",
+    "pydantic>=1.8",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=3.0",
+    "black>=22.0",
+    "isort>=5.10",
+    "mypy>=0.950",
+]
+carla = [
+    "carla>=0.9.13",
+]
+
+[tool.poetry]
+packages = [
+    { include = "autonomy_stack" },
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+addopts = "-v --tb=short"
+
+[tool.black]
+line-length = 100
+target-version = ['py39']
+
+[tool.isort]
+profile = "black"
+line_length = 100

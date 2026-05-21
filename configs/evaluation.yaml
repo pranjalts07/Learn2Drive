@@ -1,0 +1,16 @@
+name: "autonomy_stack_closed_loop_eval"
+description: "Closed-loop policy evaluation suite"
+
+evaluation:
+  num_scenarios: 3
+  scenario_types: ["simple_straight", "urban_driving", "rainy_traffic"]
+  collection_mode: "synthetic"
+
+metrics:
+  compute_all_17_fields: true
+  report_format: "json"
+
+safety_gates:
+  max_collisions: 0
+  max_violations: 0
+  min_success_rate: 0.95
