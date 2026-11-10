@@ -8,6 +8,15 @@
 
 A small autonomy machine learning project for driving data, failure mining, policy learning, safety metrics, and latency testing.
 
+<p align="center">
+  <a href="https://github.com/pranjalts07/Learn2Drive/stargazers">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/star-dark.svg">
+      <img src="assets/star-light.svg" alt="Please star the repo" width="400">
+    </picture>
+  </a>
+</p>
+
 ## What This Is
 
 Learn2Drive is a Python and PyTorch project that shows how an autonomous driving learning pipeline can be organized. It creates driving scenarios, logs episodes, finds failure cases, trains small model components, evaluates safety metrics, and measures inference speed.
